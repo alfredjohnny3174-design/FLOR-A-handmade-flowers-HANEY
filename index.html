@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FLORÉA HANEY — handmade flowers, floral gifts and custom bouquets.">
+<title>FLORÉA HANEY | Handmade Flowers</title>
+<style>
+:root{--bg:#fbf5ee;--card:#fffaf6;--ink:#332824;--rose:#a95f65;--gold:#a1814f;--line:#eaded3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,sans-serif}a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:#fbf5eef2;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav{max-width:1100px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}.logo{font:600 28px Georgia;letter-spacing:2px}.logo:before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--rose);margin-right:12px}
+nav{display:flex;gap:22px;font-size:14px}.bag{border:1px solid #ddcec2;background:var(--card);border-radius:25px;padding:10px 15px}.badge{background:var(--rose);color:#fff;border-radius:50%;padding:4px 8px;margin-left:5px}
+.hero,.section{max-width:1100px;margin:auto;padding:55px 20px}.hero{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.heroimg{height:520px;border-radius:35px;overflow:hidden;background:#eaded2;position:relative}.heroimg img{width:100%;height:100%;object-fit:cover}.tag{position:absolute;bottom:25px;left:0;background:var(--card);padding:17px 24px;border-radius:0 30px 30px 0}
+.kicker{font-size:13px;letter-spacing:3px;color:var(--gold);font-weight:bold}.hero h1{font:500 clamp(58px,8vw,100px)/.9 Georgia;margin:20px 0}.hero h1 span{color:var(--rose)}.script{font:italic 32px Georgia;color:var(--rose)}.lead{font-size:18px;line-height:1.7;color:#756962}
+.btn{display:inline-block;border:0;border-radius:28px;background:#302723;color:white;padding:14px 21px;margin:8px 6px 0 0;font-weight:bold;cursor:pointer}.alt{background:var(--card);color:var(--ink);border:1px solid #d9c8bb}
+h2{font:500 44px Georgia;margin:0 0 10px}.sub{color:#776b64;line-height:1.6;margin-bottom:28px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card,.box{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}.card img{width:100%;height:230px;object-fit:cover;background:#eee}.cardbody{padding:17px}.card h3{font:600 21px Georgia;margin:0 0 8px}.price{color:var(--rose);font-weight:bold;margin-bottom:12px}.card button{width:100%;padding:11px;border:0;border-radius:22px;background:#302723;color:white;font-weight:bold}
+.custom{padding:38px;border-radius:28px;background:#eee1d6}.about{display:grid;grid-template-columns:1fr 1fr;gap:20px}.box{padding:30px}.box p{color:#71655f;line-height:1.8}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.gallery img{width:100%;height:280px;object-fit:cover;border-radius:18px}
+footer{background:#302723;color:#fff5ed;padding:45px 20px}.foot{max-width:1100px;margin:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:25px}footer p{color:#d9cbc2;line-height:1.7}
+.overlay{display:none;position:fixed;inset:0;background:#0006;z-index:20}.overlay.show{display:block}.cart{position:fixed;z-index:30;right:0;top:0;height:100%;width:min(420px,100%);background:var(--card);padding:24px;transform:translateX(100%);transition:.3s;overflow:auto}.cart.open{transform:none}.carthead{display:flex;justify-content:space-between}.close{border:0;background:none;font-size:28px}.item{padding:14px 0;border-bottom:1px solid var(--line)}.note{font-size:13px;color:#806f65}
+@media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:25px}.heroimg{height:390px}.products{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}}
+@media(max-width:520px){.hero,.section{padding:40px 16px}.products{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.hero h1{font-size:60px}.heroimg{height:350px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="#home">FLORÉA HANEY</a><nav><a href="#shop">Shop</a><a href="#custom">Custom</a><a href="#story">Our Story</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav><button class="bag" onclick="openCart()">Bag <span class="badge" id="count">0</span></button></div></header>
+
+<main id="home">
+<section class="hero">
+<div class="heroimg"><img src="rainbow-bouquet.jpg" alt="FLORÉA HANEY handmade flowers" onerror="this.src='flower-keychains.jpg'"><div class="tag">🌷 Handmade · Gift-ready · Custom</div></div>
+<div><div class="kicker">HANDMADE FLOWERS · GIFTS · CUSTOM BOUQUETS</div><h1>Flowers <span>that stay.</span></h1><div class="script">Handcrafted with love.</div><p class="lead">Everlasting handmade blooms, cute floral gifts and custom bouquets — made to keep a beautiful feeling alive long after the moment.</p><a class="btn" href="#shop">Shop the collection</a><a class="btn alt" href="https://www.instagram.com/floreahaney/" target="_blank">Follow @floreahaney</a></div>
+</section>
+
+<section class="section" id="shop"><h2>The FLORÉA HANEY collection</h2><p class="sub">Little handmade pieces for big feelings.</p><div class="products">
+<article class="card"><img src="flower-keychains.jpg" alt="Sunflower Keychain Pair"><div class="cardbody"><h3>Sunflower Keychain Pair</h3><div class="price">₹149</div><button onclick="add('Sunflower Keychain Pair',149)">Add to bag</button></div></article>
+<article class="card"><img src="rainbow-bouquet.jpg" alt="Rainbow Bouquet"><div class="cardbody"><h3>Rainbow Bouquet</h3><div class="price">₹449</div><button onclick="add('Rainbow Bouquet',449)">Add to bag</button></div></article>
+<article class="card"><img src="purple-flower.jpg" alt="Purple Flower" onerror="this.src='rainbow-bouquet.jpg'"><div class="cardbody"><h3>Purple Flower</h3><div class="price">₹149</div><button onclick="add('Purple Flower',149)">Add to bag</button></div></article>
+<article class="card"><img src="rainbow-bouquet.jpg" alt="Single Flower"><div class="cardbody"><h3>Single Flower</h3><div class="price">₹99</div><button onclick="add('Single Flower',99)">Add to bag</button></div></article>
+</div></section>
+
+<section class="section" id="custom"><div class="custom"><div class="kicker">MADE JUST FOR THEM</div><h2>Custom Bouquet</h2><p class="sub">Tell us the colours, flowers, mood and occasion. We'll create a handmade bouquet around your idea.</p><b>Starting from ₹399</b><br><a class="btn" href="https://wa.me/91917358076347?text=Hi%20FLOR%C3%89A!%20I%27d%20like%20to%20order%20a%20custom%20bouquet." target="_blank">Request on WhatsApp</a></div></section>
+
+<section class="section" id="story"><div class="about"><div class="box"><div class="kicker">OUR LITTLE STORY</div><h2>Made to last.</h2><p>FLORÉA HANEY creates handmade flowers that turn simple moments into keepsakes. Every bloom is crafted by hand with patience, creativity and love.</p></div><div class="box"><div class="kicker">PERFECT FOR</div><h2>Every feeling.</h2><p>Birthdays, anniversaries, friendship gifts, surprises, dates, celebrations — or simply saying “I was thinking of you.”</p></div></div></section>
+
+<section class="section" id="gallery"><h2>A little FLORÉA HANEY mood</h2><p class="sub">Follow our latest creations on Instagram.</p><div class="gallery"><img src="flower-keychains.jpg" alt="Handmade flower keychains"><img src="rainbow-bouquet.jpg" alt="Rainbow bouquet"><img src="purple-flower.jpg" alt="Purple handmade flower" onerror="this.src='flower-keychains.jpg'"></div><a class="btn" href="https://www.instagram.com/floreahaney/" target="_blank">See more on Instagram</a></section>
+
+<section class="section" id="contact"><div class="box"><div class="kicker">CONTACT FLORÉA HANEY</div><h2>Ready to make someone smile?</h2><p>Place your order through WhatsApp. For custom requests, send us your idea and we'll help bring it tElementById('items');if(!cart.length){box.innerHTML='<p class="note">Your bag is empty.</p>';document.getElementById('total').textContent='Total: ₹0';return}box.innerHTML=cart.map((x,i)=>'<div class="item"><b>'+x.name+'</b><br>₹'+x.price+' <button onclick="remove('+i+')" style="float:right;border:0;background:none;color:#a95f65">Remove</button></div>').join('');document.getElementById('total').textContent='Total: ₹'+cart.reduce((a,x)=>a+x.price,0)}
+function openCart(){document.getElementById('cart').classList.add('open');document.getElementById('overlay').classList.add('show');render()}
+function closeCart(){document.getElementById('cart').classList.remove('open');document.getElementById('overlay').cl
